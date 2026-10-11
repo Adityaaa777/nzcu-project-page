@@ -1,0 +1,48 @@
+.nzcu-section-04 {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 896;
+  overflow: hidden;
+  background: #15151d;
+}
+
+.nzcu-section-04-panel {
+  position: absolute;
+  top: 1.8056cqw;
+  left: 5.9028cqw;
+  width: 88.1944cqw;
+  height: 59.375cqw;
+  overflow: hidden;
+  border-radius: 1.3889cqw;
+  background: #0b0b0f;
+}
+
+.nzcu-section-04-screen {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nzcu-section-04-screen img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.nzcu-section-04-screen--signup-top { top:-13.9583cqw; left:-4.0972cqw; width:17.2917cqw; height:37.4306cqw; }
+.nzcu-section-04-screen--home-left { top:25.1389cqw; left:0; width:13.1944cqw; height:37.4306cqw; }
+.nzcu-section-04-screen--rental { top:31.8056cqw; left:14.8611cqw; width:15.8333cqw; height:34.3056cqw; }
+.nzcu-section-04-screen--ride-confirmed { top:-7.2917cqw; left:14.8611cqw; width:15.8333cqw; height:37.4306cqw; }
+.nzcu-section-04-screen--review-rating { top:.1389cqw; left:32.3611cqw; width:17.2917cqw; height:37.4306cqw; }
+.nzcu-section-04-screen--favorites { top:13.9583cqw; left:51.3194cqw; width:17.2917cqw; height:37.4306cqw; }
+.nzcu-section-04-screen--payment { top:39.2361cqw; left:32.3611cqw; width:17.2917cqw; height:37.4306cqw; }
+.nzcu-section-04-screen--home-top { top:-36.875cqw; left:51.3194cqw; width:17.2917cqw; height:49.1667cqw; }
+.nzcu-section-04-screen--signup-bottom { top:53.0556cqw; left:51.3194cqw; width:17.2917cqw; height:37.4306cqw; }
+.nzcu-section-04-screen--safety { top:.1389cqw; left:70.2778cqw; width:17.2917cqw; height:37.4306cqw; }
+.nzcu-section-04-screen--refer-earn { top:39.2361cqw; left:70.2778cqw; width:17.2917cqw; height:39.0278cqw; }

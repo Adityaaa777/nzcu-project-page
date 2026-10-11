@@ -1,0 +1,9 @@
+{
+  "title": "NZCU — Ride Booking App UI",
+  "description": "NZCU ride-booking product design case study",
+  "robots": { "index": false },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

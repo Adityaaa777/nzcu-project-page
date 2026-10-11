@@ -1,0 +1,71 @@
+.nzcu-section-05 {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 796;
+  overflow: hidden;
+  background: #15151d;
+}
+
+.nzcu-section-05-panel {
+  position: absolute;
+  top: 0;
+  left: 5.9028cqw;
+  width: 88.1944cqw;
+  height: 54.5139cqw;
+  overflow: hidden;
+  border-radius: 1.3889cqw;
+  background: #0b0b0f;
+}
+
+.nzcu-section-05-shot {
+  position: absolute;
+  display: block;
+  width: 19.2361cqw;
+  max-width: none;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.nzcu-section-05-shot--user-home { top:13.4028cqw; left:23.0556cqw; height:54.6528cqw; }
+.nzcu-section-05-shot--user-onboarding { top:13.4028cqw; left:2.0833cqw; height:41.6667cqw; }
+.nzcu-section-05-shot--driver-onboarding { top:13.4028cqw; left:45.9028cqw; height:41.6667cqw; }
+.nzcu-section-05-shot--driver-home { top:13.4028cqw; left:66.875cqw; height:43.2639cqw; }
+
+.nzcu-section-05-headings {
+  position: absolute;
+  top: 3.4722cqw;
+  left: 2.0833cqw;
+  display: flex;
+  align-items: center;
+  gap: 16.9444cqw;
+  color: #fff;
+}
+
+.nzcu-section-05-headings > div {
+  display: flex;
+  width: 26.8056cqw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6944cqw;
+}
+
+.nzcu-section-05 h2,
+.nzcu-section-05 p {
+  width: 100%;
+  margin: 0;
+  line-height: normal;
+}
+
+.nzcu-section-05 h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.6667cqw;
+  font-weight: 700;
+}
+
+.nzcu-section-05 p {
+  color: #e0e4e7;
+  font-family: Poppins, sans-serif;
+  font-size: 1.25cqw;
+  font-weight: 500;
+}

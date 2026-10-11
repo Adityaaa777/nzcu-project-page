@@ -1,0 +1,28 @@
+.nzcu-section-07 { container-type:inline-size; position:relative; width:100%; aspect-ratio:1440/1600; overflow:hidden; background:#15151d; color:#fff; }
+.nzcu-section-07-card { position:absolute; top:2.9861cqw; left:5.9028cqw; width:88.1944cqw; height:105.5556cqw; overflow:hidden; border-radius:1.3889cqw; background:#0b0b0f; }
+.nzcu-section-07-colors { position:absolute; top:5.3472cqw; left:22.9167cqw; width:42.3611cqw; height:23.125cqw; }
+.nzcu-section-07-title { position:absolute; top:0; display:flex; height:6.3889cqw; align-items:flex-start; justify-content:center; border-bottom:1px solid #e0e4e7; padding:.6944cqw 1.25cqw 1.5278cqw; }
+.nzcu-section-07-title h2 { margin:0; font-family:"Plus Jakarta Sans",sans-serif; font-size:3.3333cqw; font-weight:600; line-height:normal; white-space:nowrap; }
+.nzcu-section-07-title--colors { left:14.5833cqw; width:13.1944cqw; }
+.nzcu-section-07-swatches { position:absolute; top:12.6389cqw; left:0; display:flex; width:42.3611cqw; height:10.4861cqw; gap:4.8611cqw; }
+.nzcu-section-07-swatches figure { display:flex; width:6.9444cqw; height:10.4861cqw; margin:0; flex:0 0 auto; flex-direction:column; align-items:center; gap:.8333cqw; }
+.nzcu-section-07-swatches i { display:block; width:6.9444cqw; height:6.9444cqw; border-radius:.9722cqw; }
+.nzcu-section-07-swatches figcaption { width:100%; margin:0; font-family:Poppins,sans-serif; font-size:1.8056cqw; font-weight:400; line-height:normal; text-align:center; }
+.nzcu-section-07-typography { position:absolute; top:34.7222cqw; left:9.0278cqw; width:70.1389cqw; height:64.4444cqw; }
+.nzcu-section-07-title--typography { left:24.1319cqw; width:21.875cqw; }
+.nzcu-section-07-type-card { position:absolute; top:10.9028cqw; left:0; width:70.1389cqw; height:53.5417cqw; border-radius:3.4722cqw; background:#ffedb8; color:#242731; font-family:"Plus Jakarta Sans",sans-serif; }
+.nzcu-section-07-type-card header { position:absolute; top:4.8611cqw; left:4.8611cqw; width:60.4167cqw; height:7.7778cqw; border-bottom:1px solid #5f6165; }
+.nzcu-section-07-type-card h3 { position:absolute; top:0; left:0; width:23.4722cqw; height:3.2639cqw; margin:0; font-size:2.9167cqw; font-weight:500; line-height:1.11; white-space:nowrap; }
+.nzcu-section-07-type-card header>div { position:absolute; top:0; left:27.9167cqw; display:flex; width:32.5cqw; height:5cqw; flex-direction:column; gap:1.3889cqw; color:#5f6165; }
+.nzcu-section-07-type-card header p { width:100%; margin:0; font-size:1.5278cqw; font-weight:400; line-height:1.166; white-space:nowrap; }
+.nzcu-section-07-type-rows { position:absolute; top:15.6944cqw; left:4.8611cqw; width:60.4167cqw; height:32.9861cqw; }
+.nzcu-section-07-type-row { position:absolute; left:0; width:60.4167cqw; font-family:"Plus Jakarta Sans",sans-serif; }
+.nzcu-section-07-type-row p,.nzcu-section-07-type-row span { position:absolute; margin:0; line-height:normal; }
+.nzcu-section-07-type-row p { left:0; width:24.7222cqw; color:#242731; }
+.nzcu-section-07-type-row span:nth-of-type(1) { left:35.7639cqw; width:9.9306cqw; font-size:1.3889cqw; }
+.nzcu-section-07-type-row span:nth-of-type(2) { left:56.5278cqw; font-size:1.3889cqw; }
+.nzcu-section-07-type-row--heading { top:0; height:5.5556cqw; }.nzcu-section-07-type-row--heading p{font-size:2.2222cqw;font-weight:700;line-height:normal}
+.nzcu-section-07-type-row--subheading { top:10.0694cqw; height:4.1667cqw; }.nzcu-section-07-type-row--subheading p{font-size:1.6667cqw;font-weight:700}
+.nzcu-section-07-type-row--body { top:18.75cqw; height:1.7361cqw; }.nzcu-section-07-type-row--body p{top:.1736cqw;font-size:1.1111cqw;font-weight:500}
+.nzcu-section-07-type-row--light { top:25cqw; height:1.7361cqw; }.nzcu-section-07-type-row--light p{top:.1736cqw;font-size:1.1111cqw;font-weight:300;white-space:nowrap}
+.nzcu-section-07-type-row--bold { top:31.25cqw; height:1.7361cqw; }.nzcu-section-07-type-row--bold p{top:.1736cqw;font-size:1.1111cqw;font-weight:700;white-space:nowrap}

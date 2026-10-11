@@ -1,0 +1,142 @@
+.nzcu-section-02 {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 722;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #000 4.327%, #26e3dd 97.568%);
+  color: #fff;
+}
+
+.nzcu-section-02-phone {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.nzcu-section-02-phone img {
+  position: absolute;
+  display: block;
+  max-width: none;
+}
+
+.nzcu-section-02-phone--12 {
+  top: 25.2778cqw;
+  left: 28.0556cqw;
+  width: 12.5694cqw;
+  height: 25.0694cqw;
+}
+
+.nzcu-section-02-phone--12 img {
+  top: -22.92%;
+  left: -158.33%;
+  width: 416.67%;
+  height: 145.83%;
+}
+
+.nzcu-section-02-phone--13 {
+  top: 21.9444cqw;
+  left: 42.0139cqw;
+  width: 14.375cqw;
+  height: 28.4722cqw;
+}
+
+.nzcu-section-02-phone--13 img {
+  top: -22.92%;
+  left: -154.9%;
+  width: 409.8%;
+  height: 144.85%;
+}
+
+.nzcu-section-02-phone--14 {
+  top: 15.4167cqw;
+  left: 57.7778cqw;
+  width: 17.9167cqw;
+  height: 34.7222cqw;
+}
+
+.nzcu-section-02-phone--14-copy {
+  top: 15.4861cqw;
+}
+
+.nzcu-section-02-phone--14 img {
+  top: -23.71%;
+  left: -154.29%;
+  width: 408.57%;
+  height: 147.42%;
+}
+
+.nzcu-section-02-phone--15 {
+  top: 8.8194cqw;
+  left: 77.0833cqw;
+  width: 20.8333cqw;
+  height: 41.6667cqw;
+}
+
+.nzcu-section-02-phone--15 img {
+  top: -22.73%;
+  left: -158.11%;
+  width: 416.1%;
+  height: 145.45%;
+}
+
+.nzcu-section-02-brand {
+  position: absolute;
+  top: 7.7778cqw;
+  left: 4.1667cqw;
+  display: flex;
+  width: 47.2917cqw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875cqw;
+}
+
+.nzcu-section-02-wordmark {
+  display: flex;
+  width: 24.9306cqw;
+  height: 6.3889cqw;
+  align-items: center;
+  gap: 0.9722cqw;
+}
+
+.nzcu-section-02-logo {
+  position: relative;
+  display: block;
+  width: 6.5972cqw;
+  height: 6.3889cqw;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.nzcu-section-02-logo img {
+  position: absolute;
+  top: -18.06%;
+  left: -17.57%;
+  display: block;
+  width: 135.14%;
+  height: 138.89%;
+  max-width: none;
+}
+
+.nzcu-section-02-wordmark h1,
+.nzcu-section-02-brand > p {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.nzcu-section-02-wordmark h1 {
+  width: 17.3611cqw;
+  font-size: 6.9444cqw;
+  font-weight: 700;
+  letter-spacing: -0.045cqw;
+  line-height: 0.917;
+}
+
+.nzcu-section-02-brand > p {
+  width: 100%;
+  font-size: 1.9444cqw;
+  font-weight: 500;
+  line-height: normal;
+}

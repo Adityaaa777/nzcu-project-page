@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500&display=swap");
+@import "tailwindcss";
+
+:root {
+  --surface: #15151d;
+  --panel: #0b0b0f;
+  --white: #fff;
+  --muted: #7c7c8d;
+  --purple: #6c36fe;
+  --aqua: #26e3dd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--surface);
+  color: var(--white);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--aqua);
+  outline-offset: 4px;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.nzcu-project-page {
+  position: relative;
+  background: var(--surface);
+}
+
+.nzcu-project-page__navigation {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: clamp(88px, 7.9167vw, 114px);
+  align-items: center;
+  background: transparent;
+}
+
+.nzcu-project-page > section,
+.nzcu-project-page > div {
+  scroll-margin-top: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
