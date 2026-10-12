@@ -20,6 +20,12 @@
   line-height: 0.80705;
   text-decoration: none;
   white-space: nowrap;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.nzcu-section-01-link:hover {
+  color: #c6b3ff;
+  transform: translateY(-3px);
 }
 
 .nzcu-section-01-link:focus-visible {

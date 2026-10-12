@@ -13,19 +13,17 @@ export default function Section03Overview() {
               <h2 data-node-id="1:359">INTRODUCTION :</h2>
               <div className="nzcu-section-03-copy" data-node-id="1:360">
                 <p>
-                  Cabzo was designed as a modern urban mobility platform built to simplify everyday
-                  commuting.<br /> The focus of this product was to create a fast, visually clean, and
-                  highly intuitive ride-booking experience for daily users who prioritize speed,
-                  convenience, and real-time visibility.
+                  NZCU brings cars, scooters, e-rickshaws, and loaders into one ride-booking app.
+                  It helps people choose the right vehicle for each trip and move from search to
+                  confirmed booking with ease.
                 </p>
                 <p>
-                  The platform was designed around the idea that booking a ride should feel effortless
-                  — from location detection to ride confirmation, every interaction was optimized to
-                  reduce friction.
+                  The user app covers onboarding, vehicle selection, rentals, ride confirmation,
+                  payments, favorites, safety, and referrals in one connected journey.
                 </p>
                 <p>
-                  Cabzo combines a rider app, driver interface, and operational backend into a connected
-                  mobility ecosystem.
+                  A companion driver app supports ride requests, trip verification, payments, and help
+                  so drivers can manage their work from the same platform.
                 </p>
               </div>
             </article>
