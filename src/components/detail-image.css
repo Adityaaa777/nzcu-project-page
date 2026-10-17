@@ -18,3 +18,16 @@
 .gallery-zoom-controls button:hover:not(:disabled) { background:#6c36fe; }
 .gallery-zoom-controls button:disabled { opacity:.4; cursor:default; }
 .gallery-zoom-controls button:focus-visible { outline:2px solid #bda7ff; outline-offset:2px; }
+.gallery-lightbox-nav { position:absolute; top:50%; z-index:1; display:grid; width:50px; height:50px; padding:0; place-items:center; transform:translateY(-50%); border:1px solid rgb(255 255 255 / 32%); border-radius:50%; background:rgb(17 17 23 / 92%); color:#fff; cursor:pointer; }
+.gallery-lightbox-nav--previous { left:-70px; }
+.gallery-lightbox-nav--next { right:-70px; }
+.gallery-lightbox-nav svg { width:26px; height:26px; fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; stroke-width:2; }
+.gallery-lightbox-nav:hover { background:#febd01; color:#171717; }
+.gallery-lightbox-nav:focus-visible { outline:2px solid #febd01; outline-offset:3px; }
+.gallery-lightbox-figure--wide .gallery-lightbox-nav--previous { left:8px; }
+.gallery-lightbox-figure--wide .gallery-lightbox-nav--next { right:8px; }
+@media (max-width:600px) {
+  .gallery-lightbox-nav { width:42px; height:42px; }
+  .gallery-lightbox-nav--previous { left:8px; }
+  .gallery-lightbox-nav--next { right:8px; }
+}

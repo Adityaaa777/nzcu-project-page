@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react"
 import type { ImgHTMLAttributes, KeyboardEvent } from "react"
-import { createPortal } from "react-dom"
-import { LightboxZoomControls, useLightboxZoom } from "./LightboxZoom"
+import { ScreenViewer, useScreenViewer } from "./ScreenViewer"
+import type { ScreenCrop } from "./ScreenViewer"
 import "./detail-image.css"
 
 type DetailImageProps = ImgHTMLAttributes<HTMLImageElement> & {
@@ -9,33 +8,18 @@ type DetailImageProps = ImgHTMLAttributes<HTMLImageElement> & {
   alt: string
   viewLabel?: string
   wide?: boolean
-  viewCrop?: { sourceWidth: number; x: number; y: number; width: number; height: number }
+  viewCrop?: ScreenCrop
 }
 
-/** Opens an existing screen image at its original aspect ratio. */
+/** Opens an existing screen image and lets visitors browse the project screens. */
 export function DetailImage({ alt, className = "", src, viewLabel, wide = false, viewCrop, ...imageProps }: DetailImageProps) {
-  const [isOpen, setIsOpen] = useState(false)
-  const zoom = useLightboxZoom(isOpen)
+  const viewer = useScreenViewer<HTMLImageElement>()
   const label = viewLabel || alt || "Screen"
-
-  useEffect(() => {
-    if (!isOpen) return
-    const previousOverflow = document.body.style.overflow
-    const closeOnEscape = (event: globalThis.KeyboardEvent) => {
-      if (event.key === "Escape") setIsOpen(false)
-    }
-    document.body.style.overflow = "hidden"
-    window.addEventListener("keydown", closeOnEscape)
-    return () => {
-      document.body.style.overflow = previousOverflow
-      window.removeEventListener("keydown", closeOnEscape)
-    }
-  }, [isOpen])
 
   const openFromKeyboard = (event: KeyboardEvent<HTMLImageElement>) => {
     if (event.key !== "Enter" && event.key !== " ") return
     event.preventDefault()
-    setIsOpen(true)
+    viewer.open()
   }
 
   return (
@@ -44,36 +28,21 @@ export function DetailImage({ alt, className = "", src, viewLabel, wide = false,
         {...imageProps}
         alt={alt}
         aria-label={`View ${label} in detail`}
-        aria-expanded={isOpen}
+        aria-expanded={viewer.isOpen}
         aria-haspopup="dialog"
         className={`${className} detail-image-trigger`.trim()}
-        onClick={() => setIsOpen(true)}
+        data-screen-src={src}
+        data-screen-label={label}
+        data-screen-wide={wide ? "true" : undefined}
+        data-screen-crop={viewCrop ? JSON.stringify(viewCrop) : undefined}
+        onClick={viewer.open}
         onKeyDown={openFromKeyboard}
+        ref={viewer.triggerRef}
         role="button"
         src={src}
         tabIndex={0}
       />
-      {isOpen && createPortal(
-        <div aria-label={`${label} detailed view`} aria-modal="true" className="gallery-lightbox" onClick={() => setIsOpen(false)} role="dialog">
-          <figure className={`gallery-lightbox-figure${wide ? " gallery-lightbox-figure--wide" : ""}`} onClick={(event) => event.stopPropagation()}>
-            {viewCrop ? (
-              <div className="gallery-lightbox-crop" style={{ aspectRatio: `${viewCrop.width} / ${viewCrop.height}`, width: `min(92vw, calc(84vh * ${viewCrop.width / viewCrop.height}))`, ...zoom.mediaStyle }} {...zoom.mediaHandlers}>
-                <img
-                  alt={label}
-                  src={src}
-                  style={{ left: `${(-viewCrop.x / viewCrop.width) * 100}%`, top: `${(-viewCrop.y / viewCrop.height) * 100}%`, width: `${(viewCrop.sourceWidth / viewCrop.width) * 100}%` }}
-                />
-              </div>
-            ) : <img alt={label} src={src} style={zoom.mediaStyle} {...zoom.mediaHandlers} />}
-            <figcaption>{label}</figcaption>
-            <LightboxZoomControls {...zoom} />
-            <button aria-label="Close detailed view" autoFocus className="gallery-lightbox-close" onClick={() => setIsOpen(false)} type="button">
-              <span aria-hidden="true">×</span>
-            </button>
-          </figure>
-        </div>,
-        document.body,
-      )}
+      <ScreenViewer viewer={viewer} />
     </>
   )
 }
